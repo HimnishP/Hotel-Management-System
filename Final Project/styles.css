@@ -1,0 +1,500 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header styling */
+header {
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow header items to wrap on smaller screens */
+}
+
+/* Logo and title styling */
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header img {
+    height: 50px;
+    width: auto;
+    border-radius: 30px;
+    margin-right: 500px;
+}
+
+/* Navigation styling */
+header nav {
+    display: flex;
+    gap: 15px; 
+}
+
+header nav a {
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for nav links */
+header nav a:hover {
+    background-color: #555; 
+}
+
+/* Main styling */
+main {
+    padding: 40px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: Arial, sans-serif;
+    text-align: center; /* Center align text within main */
+    width: 100%;
+}
+
+main h2 {
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 16px;
+    color: #666;
+    max-width: 1000px;
+    margin: 0 auto 30px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+.rooms-suites {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rooms-suites h2 {
+    font-size: 28px;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.rooms-suites p {
+    font-size: 16px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.room-category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.room-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 20px); /* Adjusts for two columns */
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.room-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.room-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.room-item h3 {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #333;
+}
+
+.room-item p {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.room-item button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.room-item button:hover {
+    background-color: #555;
+}
+
+/* Style for modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Make sure it stays on top */
+    display: flex; /* Use flexbox for centering */
+}
+
+/* Center the modal content */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    width: 300px; /* Adjust the size as needed */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Styling for the success message */
+#success-message p {
+    color: black;
+    margin-bottom: 10px;
+}
+
+/* If you need to style any specific span elements for card details */
+#success-message span {
+    font-weight: bold;
+}
+
+
+/* Hidden elements */
+.hidden {
+    display: none;
+}
+
+
+
+
+/* About Us Section */
+.about-us {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 32px;
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.about-us p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+    margin: 10px 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Location Section with Map */
+.location {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.location h3 {
+    font-size: 24px;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.location address {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-style: normal;
+    color: #555;
+}
+
+.location iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Button styling */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Features Section */
+#features {
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center the items horizontally */
+    margin-top: 100px;
+    gap: 20px; /* Space between items */
+}
+
+#FeaturesHeader {
+    margin-top: 100px;
+}
+.feature-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: calc(50% - 20px); /* Make items take up half of the container width, minus gap */
+    max-width: 300px; /* Optional max-width for consistent sizing */
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0; /* Round the top corners */
+}
+
+.feature-item h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #333;
+}
+
+.feature-item p {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0 0;
+}
+/* Main styling for the reviews section */
+.reviews {
+    margin: 20px auto; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px; 
+}
+
+/* Styling for individual review items */
+.review-item {
+    margin-bottom: 15px;
+    padding: 10px; 
+    border-bottom: 1px solid #ddd; 
+    transition: background-color 0.3s; 
+}
+
+.review-item:last-child {
+    border-bottom: none; 
+}
+
+/* Title for the reviews section */
+h2 {
+    color: #333; 
+    font-size: 24px; 
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+
+/* Style for review author names */
+h3 {
+    color: #007BFF; 
+    font-size: 18px; 
+    margin: 0 0 5px 0; 
+}
+
+/* Style for star ratings */
+.rating {
+    color: #FFD700; 
+    margin-bottom: 5px; 
+}
+
+/* Style for review text */
+p {
+    color: #555; 
+    margin: 5px 0; 
+}
+
+/* Styling for the submit review section */
+.submit-review {
+    margin-top: 20px; 
+    padding: 15px; 
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+}
+
+/* Styles for form labels */
+label {
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: bold; 
+    
+}
+
+/* Styles for form inputs and textarea */
+input[type="text"],
+select,
+textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 16px; 
+}
+
+/* Styles for the submit button */
+button {
+    background-color: #007BFF; 
+    color: white; 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s; 
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #0056b3; 
+}
+
+
+/* Main styles for the FAQ section */
+.faq {
+    margin: 20px auto; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    max-width: 800px; 
+}
+
+/* Styling for each FAQ item */
+.faq-item {
+    margin-bottom: 15px;
+    padding: 10px; 
+    border-bottom: 1px solid #ddd; 
+    transition: background-color 0.3s; 
+}
+
+.faq-item:last-child {
+    border-bottom: none; 
+}
+
+/* Title for the FAQ section */
+h2 {
+    color: #333; 
+    font-size: 24px; 
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+
+/* Style for question titles */
+h3 {
+    color: #007BFF; 
+    cursor: pointer; 
+    margin: 0; 
+    font-size: 18px; 
+}
+
+/* Styling for answers */
+p {
+    color: #555; 
+    margin: 5px 0; 
+}
+
+/* Hover effect for FAQ items */
+.faq-item:hover {
+    background-color: #f0f8ff; 
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-info p {
+    color: #fff;
+    margin: 5px 0;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.social-links a:hover {
+    color: #bbb;
+}

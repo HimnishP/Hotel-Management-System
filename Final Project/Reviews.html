@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Hotel Management</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="main.js"></script>
+
+
+</head>
+<body>
+    <header>
+        <h1>Hotel Management System</h1>
+        <img src="Images/logo.png" alt="Hotel Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Rooms.html">Rooms & Suites</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="Reviews.html">Reviews</a>
+            <a href="FAQ.html">FAQ</a>
+        </nav>
+    </header>
+    <main>
+        <section class="reviews">
+            <h2>Guest Reviews</h2>
+            
+            <div class="review-item">
+                <h3>John Doe</h3>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <p>"I had a wonderful stay at this hotel! The staff was incredibly friendly, and the amenities were top-notch. I will definitely return!"</p>
+            </div>
+    
+            <div class="review-item">
+                <h3>Jane Smith</h3>
+                <div class="rating">⭐⭐⭐⭐</div>
+                <p>"The room was clean and spacious, but I wish the breakfast options were more varied. Overall, a great experience!"</p>
+            </div>
+    
+            <div class="review-item">
+                <h3>Emily Johnson</h3>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <p>"Amazing service! The staff went above and beyond to make my stay enjoyable. Highly recommend this hotel!"</p>
+            </div>
+    
+            <div class="review-item">
+                <h3>Michael Brown</h3>
+                <div class="rating">⭐⭐⭐</div>
+                <p>"The location was perfect, but the noise from the street was a bit disruptive at night. Still, I enjoyed my time here."</p>
+            </div>
+    
+            <div class="review-item">
+                <h3>Sarah Wilson</h3>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <p>"Absolutely loved it! The views from my room were breathtaking, and the facilities were excellent. Will be back!"</p>
+            </div>
+    
+            <div class="submit-review">
+                <h3>Submit Your Review</h3>
+                <form>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="rating">Rating:</label>
+                    <select id="rating" name="rating" required>
+                        <option value="5">5 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="2">2 Stars</option>
+                        <option value="1">1 Star</option>
+                    </select>
+                    <label for="review">Your Review:</label>
+                    <textarea id="review" name="review" rows="4" required></textarea>
+    
+                    <button type="submit">Submit Review</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <p>&copy; 2024 Hotel Management System. All rights reserved.</p>
+            <p>1228 Sherbrooke St W, Montreal, Quebec H3G 1H6 | Phone:  (514) 567-8901</p>
+        </div>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+    <script src='main.js'></script>
+</body>
+</html>
